@@ -1,0 +1,71 @@
+<!--
+Question 4: Create a Company Layout Page using only block-level elements.
+Requirements:
+  ● <header> → Company name
+  ● <nav> → Navigation links
+  ● <main> → Two <section>s: About the company, Services offered (list)
+  ● <aside> → Display a blockquote from the company’s CEO.
+  ● <footer> → Contact email and address.
+Author: Palak Nayak
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Company Layout - Palak Nayak</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>TechNova Solutions Pvt. Ltd.</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a> |
+    <a href="#services">Services</a> |
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About the Company</h2>
+      <p>
+        TechNova Solutions is a leading IT company specializing in software development,
+        cloud solutions, and digital transformation. We focus on delivering quality-driven
+        technology to empower businesses globally.
+      </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <h2>Services Offered</h2>
+      <ul>
+        <li>Custom Software Development</li>
+        <li>Cloud Infrastructure Management</li>
+        <li>Mobile Application Design</li>
+        <li>Website Development</li>
+        <li>Technical Consulting</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- CEO Quote -->
+  <aside>
+    <blockquote>
+      "Innovation and integrity are at the heart of everything we do."  
+      <br>— CEO, TechNova Solutions
+    </blockquote>
+  </aside>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>
+      Contact us: <a href="mailto:palak.nayak@gmail.com">palak.nayak@example.com</a><br>
+      Address: 22 Business Park, Indore, India
+    </p>
+  </footer>
+</body>
+</html>

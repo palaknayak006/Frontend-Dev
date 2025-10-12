@@ -1,0 +1,66 @@
+<!--
+Question 7: Design a Hotel Room Booking Form using HTML only.
+Requirements:
+  ● Include input fields for name, email, phone.
+  ● Use <select> for room type.
+  ● Use <input type="date"> for check-in and check-out.
+  ● Add <textarea> for special requests.
+Author: Palak Nayak
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hotel Booking Form - Palak Nayak</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Hotel Sunshine - Room Booking</h1>
+  </header>
+
+  <!-- Booking Form -->
+  <main>
+    <form>
+      <p>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+      </p>
+      <p>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+      </p>
+      <p>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
+      </p>
+      <p>
+        <label for="room">Room Type:</label>
+        <select id="room" name="room">
+          <option selected>Select a room</option>
+          <option>Single</option>
+          <option>Double</option>
+          <option>Suite</option>
+        </select>
+      </p>
+      <p>
+        <label for="checkin">Check-In Date:</label>
+        <input type="date" id="checkin" name="checkin">
+      </p>
+      <p>
+        <label for="checkout">Check-Out Date:</label>
+        <input type="date" id="checkout" name="checkout">
+      </p>
+      <p>
+        <label for="requests">Special Requests:</label><br>
+        <textarea id="requests" name="requests" rows="4" cols="40" placeholder="Any special requests"></textarea>
+      </p>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Hotel Sunshine | Palak Nayak | Contact: palak.nayak@gmail.com</p>
+  </footer>
+</body>
+</html>

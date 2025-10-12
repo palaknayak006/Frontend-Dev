@@ -1,0 +1,90 @@
+<!--
+Question 1: Multi-section resume page.
+Include:
+<header> → Name & contact info
+<nav> → Quick links (About, Skills, Projects, Education)
+<main> → sections: About Me, Skills (ul), Projects (ol), Education (table)
+<footer> → Copyright info.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Resume - Your Name</title>
+</head>
+<body>
+  <!-- Header: Name & contact info -->
+  <header>
+    <h1>Palak Nayak</h1>
+    <p>Email: npalak079@gmail.com | Phone: +91-9876543210 | Location: Jhansi,UP,INDIA</p>
+  </header>
+
+  <!-- Navigation: Quick links -->
+  <nav>
+    <!-- Quick links (anchor targets) -->
+    <a href="#about">About</a> |
+    <a href="#skills">Skills</a> |
+    <a href="#projects">Projects</a> |
+    <a href="#education">Education</a>
+  </nav>
+
+  <!-- Main content with multiple sections -->
+  <main>
+    <!-- About Me -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a motivated web developer with interest in building clean, semantic HTML pages and learning modern web technologies.</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>Problem Solving</li>
+        <li>Team Collaboration</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <ol>
+        <li>Portfolio Website — Personal portfolio showcasing projects.</li>
+        <li>To-Do App (HTML prototype) — Task management UI using only HTML structure.</li>
+      </ol>
+    </section>
+
+    <!-- Education (table) -->
+    <section id="education">
+      <h2>Education</h2>
+      <table border="1" title="Education table">
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>Institute</th>
+            <th>Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bachelor of Technology</td>
+            <td>GLA UNIVERSITY</td>
+            <td>2027</td>
+          </tr>
+          <tr>
+            <td>Higher Secondary</td>
+            <td>KV NO.1 JHANSI CANTT</td>
+            <td>2023</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Palak Nayak. All rights reserved.</p>
+  </footer>
+</body>
+</html>

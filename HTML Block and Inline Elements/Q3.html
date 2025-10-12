@@ -1,0 +1,91 @@
+<!--
+Question 3: Create a Course Registration Form structure using HTML only.
+Requirements:
+  ● <fieldset> and <legend> for grouping fields.
+  ● A <select> dropdown for selecting a course.
+  ● <input> fields for name and email.
+  ● A <table> at the bottom showing available course schedules (Day, Time, Instructor).
+Author: Palak Nayak
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Course Registration Form - Palak Nayak</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Course Registration Form</h1>
+    <p>Fill in the form below to register for a course.</p>
+  </header>
+
+  <!-- Registration Form -->
+  <main>
+    <form>
+      <fieldset>
+        <legend>Student Information</legend>
+
+        <p>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name">
+        </p>
+
+        <p>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address">
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Course Details</legend>
+
+        <p>
+          <label for="course">Select Course:</label>
+          <select id="course" name="course">
+            <option selected>Select a course</option>
+            <option>Web Development Basics</option>
+            <option>Python Programming</option>
+            <option>Data Structures & Algorithms</option>
+            <option>Database Management</option>
+          </select>
+        </p>
+      </fieldset>
+
+      <!-- Available Schedules Table -->
+      <h2>Available Course Schedules</h2>
+      <table border="1" title="Course Schedule Table">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Instructor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>10:00 AM - 12:00 PM</td>
+            <td>Mr. R. Sharma</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>2:00 PM - 4:00 PM</td>
+            <td>Ms. K. Gupta</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>11:00 AM - 1:00 PM</td>
+            <td>Mr. A. Mehta</td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Palak Nayak | Contact: palak.nayak@gmail.com</p>
+  </footer>
+</body>
+</html>

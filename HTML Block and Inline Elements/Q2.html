@@ -1,0 +1,72 @@
+<!--
+Question 2: Build a Product Catalog page for an online store using only HTML.
+Requirements:
+  ● Use a <table> to list products with columns → Product Name, Description, Price, and Availability.
+  ● Add one image per product using <img> inside a cell.
+  ● Use attributes like colspan and rowspan where necessary.
+Author: Palak Nayak
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Product Catalog - Palak Nayak</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Online Store Product Catalog</h1>
+    <p>Welcome to Palak Nayak’s HTML-only product listing page.</p>
+  </header>
+
+  <!-- Product Table -->
+  <main>
+    <table border="1" title="Product Catalog Table">
+      <caption><strong>Product Catalog</strong></caption>
+      <thead>
+        <tr>
+          <th>Product Image</th>
+          <th>Product Name</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Availability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="https://via.placeholder.com/100" alt="Wireless Mouse"></td>
+          <td>Wireless Mouse</td>
+          <td>Ergonomic design with 2.4GHz wireless connectivity and adjustable DPI.</td>
+          <td>₹599</td>
+          <td>In Stock</td>
+        </tr>
+        <tr>
+          <td><img src="https://via.placeholder.com/100" alt="Mechanical Keyboard"></td>
+          <td>Mechanical Keyboard</td>
+          <td>Blue switch keyboard with RGB lighting, durable aluminum frame.</td>
+          <td>₹2,499</td>
+          <td>In Stock</td>
+        </tr>
+        <tr>
+          <td><img src="https://via.placeholder.com/100" alt="USB Headphones"></td>
+          <td>USB Headphones</td>
+          <td>Noise-cancelling mic, soft ear pads, ideal for online meetings.</td>
+          <td>₹1,299</td>
+          <td>Out of Stock</td>
+        </tr>
+        <!-- Example of colspan: full-width note -->
+        <tr>
+          <td colspan="5" style="text-align:center;">
+            <em>All prices include taxes. Free delivery for orders above ₹1000.</em>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Palak Nayak | Contact: palak.nayak@gmail.com</p>
+  </footer>
+</body>
+</html>

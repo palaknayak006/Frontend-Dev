@@ -1,0 +1,64 @@
+<!--
+Question 11: Design a News Layout Page
+Requirements:
+  ● <header> → Site name
+  ● <nav> → News Categories (Sports, Technology, Politics)
+  ● <main> → 3 <article>s each with headline, date (<time>), short content, and a source link
+  ● <aside> → Popular Topics list
+  ● <footer> → Contact & rights info
+Author: Palak Nayak
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>News Portal - Palak Nayak</title>
+</head>
+<body>
+  <header>
+    <h1>Daily News Hub</h1>
+  </header>
+
+  <nav>
+    <a href="#sports">Sports</a> |
+    <a href="#tech">Technology</a> |
+    <a href="#politics">Politics</a>
+  </nav>
+
+  <main>
+    <!-- Article 1 -->
+    <article id="sports">
+      <h2>Champions League Final</h2>
+      <time datetime="2025-10-12">October 12, 2025</time>
+      <p>The Champions League final ended in a thrilling penalty shootout.</p>
+      <a href="#">Read more</a>
+    </article>
+
+    <!-- Article 2 -->
+    <article id="tech">
+      <h2>New Smartphone Launch</h2>
+      <time datetime="2025-10-10">October 10, 2025</time>
+      <p>The latest smartphone model features innovative camera technology.</p>
+      <a href="#">Read more</a>
+    </article>
+
+    <!-- Article 3 -->
+    <article id="politics">
+      <h2>Election Updates</h2>
+      <time datetime="2025-10-11">October 11, 2025</time>
+      <p>Preliminary election results indicate a major shift in voter trends.</p>
+      <a href="#">Read more</a>
+    </article>
+  </main>
+
+  <aside>
+    <h2>Popular Topics</h2>
+    <ul>
+      <li>Olympics 2025</li>
+      <li>AI Innovations</li>
+      <li>Global Economy</li>
+    </ul>
+  </aside>
+
+  <footer>
+    <p>

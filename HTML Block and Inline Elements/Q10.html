@@ -1,0 +1,66 @@
+<!--
+Question 10: Create a Dropdown-based Selection Page
+Requirements:
+  ● Add multiple <select> dropdowns for Country, State, City, Favorite Tourist Place
+  ● Each dropdown must have a pre-selected option
+  ● Add a <p> summarizing your choices
+Author: Palak Nayak
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dropdown Selection - Palak Nayak</title>
+</head>
+<body>
+  <header>
+    <h1>Tourist Destination Selection</h1>
+  </header>
+
+  <main>
+    <form>
+      <p>
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option selected>India</option>
+          <option>France</option>
+          <option>Japan</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="state">State:</label>
+        <select id="state" name="state">
+          <option selected>Maharashtra</option>
+          <option>Rajasthan</option>
+          <option>Kerala</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="city">City:</label>
+        <select id="city" name="city">
+          <option selected>Mumbai</option>
+          <option>Pune</option>
+          <option>Jaipur</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="tourist">Favorite Tourist Place:</label>
+        <select id="tourist" name="tourist">
+          <option selected>Gateway of India</option>
+          <option>Ajanta Caves</option>
+          <option>Backwaters of Kerala</option>
+        </select>
+      </p>
+    </form>
+
+    <p>Your selections: Country - India, State - Maharashtra, City - Mumbai, Favorite Place - Gateway of India.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Palak Nayak</p>
+  </footer>
+</body>
+</html>
