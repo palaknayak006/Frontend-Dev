@@ -1,0 +1,21 @@
+<!-- Question 17: Form with iframe result -->
+<!-- form.html: Form that submits to result.html using an iframe -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 17 - Form Page</title>
+</head>
+<body>
+    <h1>Form Page</h1>
+    <form target="resultFrame" action="result.html" method="get">
+        <label for="textinput">Enter something:</label><br>
+        <input type="text" id="textinput" name="textinput" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    <!-- The result of the form submission will appear here -->
+    <iframe name="resultFrame" width="80%" height="100px" title="Result"></iframe>
+</body>
+</html>
+
