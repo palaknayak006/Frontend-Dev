@@ -1,0 +1,67 @@
+<!-- 
+Question 2:
+Design a multi-section informational webpage (e.g., “Favorite Destination”)
+Requirements:
+● header, nav, main, footer
+● Each section with full-width background color or image
+● Linear gradient in one section, radial gradient in another
+● Padding, margins, borders
+● Different font sizes and weights
+● At least two sections with background-attachment: fixed (parallax effect)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palak Nayak - Favorite Destination</title>
+    <link rel="stylesheet" href="Q2.css">
+</head>
+<body>
+    <header>
+        <h1>Palak Nayak</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="parallax1">
+            <div class="content">
+                <h2>Welcome to My Travel Blog</h2>
+                <p>Explore my favorite destinations and travel stories around the world.</p>
+            </div>
+        </section>
+
+        <section id="destinations" class="gradient-linear">
+            <div class="content">
+                <h2>Paris</h2>
+                <p>The city of love, known for the Eiffel Tower, museums, and charming streets.</p>
+            </div>
+        </section>
+
+        <section class="parallax2">
+            <div class="content">
+                <h2>Tokyo</h2>
+                <p>Modern metropolis with rich culture, delicious food, and neon lights everywhere.</p>
+            </div>
+        </section>
+
+        <section class="gradient-radial">
+            <div class="content">
+                <h2>New York</h2>
+                <p>The city that never sleeps, famous for Broadway, skyscrapers, and Central Park.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Palak Nayak. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,98 @@
+/* 
+Question 3 CSS:
+Team Members 3-column layout
+*/
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Team section */
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 5%;
+    flex-wrap: wrap;
+}
+
+/* Card styling */
+.card {
+    background-color: white;
+    padding: 1.5rem;
+    width: 300px;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* Highlighted card for Team Lead */
+.card.highlight {
+    background-color: #ffeb3b;
+    border: 2px solid #fbc02d;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+}

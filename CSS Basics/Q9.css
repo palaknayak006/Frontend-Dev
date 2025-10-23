@@ -1,0 +1,71 @@
+/* 
+Question 9 CSS:
+Newspaper / Magazine column layout
+*/
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #fdf6e3;
+    color: #333;
+    padding: 2rem;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Main magazine layout */
+.magazine {
+    column-count: 3;
+    column-gap: 2rem;
+    column-rule: 1px solid #ccc; /* Optional line between columns */
+    text-align: justify;
+}
+
+/* Heading spanning all columns */
+.main-heading {
+    column-span: all;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* Float image to left */
+.float-left {
+    float: left;
+    margin: 0 1rem 1rem 0;
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive: reduce columns on smaller screens */
+@media (max-width: 900px) {
+    .magazine {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .magazine {
+        column-count: 1;
+    }
+}

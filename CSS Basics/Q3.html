@@ -1,0 +1,55 @@
+<!-- 
+Question 3:
+Build a 3-column “Team Members” layout showing profile cards for three people.
+Requirements:
+● display: flex or grid
+● Each card: name, role, description
+● Box Model: uniform padding/margins
+● Borders, rounded corners, shadow effects
+● Highlight one card (Team Lead)
+● Responsive: single column below 600px
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palak Nayak - Team</title>
+    <link rel="stylesheet" href="Q3.css">
+</head>
+<body>
+    <header>
+        <h1>Palak Nayak</h1>
+    </header>
+
+    <main>
+        <section class="team">
+            <div class="card highlight">
+                <img src="mypic.jpg" alt="Palak Nayak">
+                <h2>Palak Nayak</h2>
+                <h3>Team Lead</h3>
+                <p>Leading the web development team and ensuring all projects meet high standards of quality and design.</p>
+            </div>
+
+            <div class="card">
+                <img src="member1.jpg" alt="Team Member 1">
+                <h2>Priyanshi Tripathi</h2>
+                <h3>Front-End Developer</h3>
+                <p>Specializes in creating responsive and interactive user interfaces using HTML and CSS.</p>
+            </div>
+
+            <div class="card">
+                <img src="member2.jpg" alt="Team Member 2">
+                <h2>Arjun Singh</h2>
+                <h3>Back-End Developer</h3>
+                <p>Focuses on server-side logic, database management, and API integration for seamless functionality.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Palak Nayak. All rights reserved.</p>
+    </footer>
+</body>
+</html>

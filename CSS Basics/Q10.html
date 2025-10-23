@@ -1,0 +1,90 @@
+<!-- 
+Question 10:
+Complete webpage layout demonstrating Box Model, positioning, flex/grid, and responsiveness
+Requirements:
+● Header with navigation (sticky)
+● Hero section with background image and centered text
+● About section with 2 columns (text + image)
+● Services section with 3 boxes
+● Contact section with simple form
+● Footer with copyright
+● Use margin, padding, border, outline, relative/absolute/fixed positioning, flex/grid, rgba colors, gradients
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palak Nayak - Complete Webpage</title>
+    <link rel="stylesheet" href="Q10.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h1>Palak Nayak</h1>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Creative web development and design solutions</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hello! I'm Palak Nayak, a passionate web developer specializing in creating responsive and visually appealing websites. I focus on clean design, usability, and effective solutions for clients.</p>
+            </div>
+            <div class="about-image">
+                <img src="mypic.jpg" alt="Palak Nayak">
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>My Services</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <h3>Web Design</h3>
+                <p>Creating visually appealing and responsive designs tailored to your brand.</p>
+            </div>
+            <div class="service-box">
+                <h3>Front-End Development</h3>
+                <p>Developing interactive and dynamic websites using modern web technologies.</p>
+            </div>
+            <div class="service-box">
+                <h3>SEO Optimization</h3>
+                <p>Improving website visibility and search engine rankings with best practices.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Palak Nayak. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+

@@ -1,0 +1,190 @@
+/* q1.css */
+
+/*
+Question 1 — Create a personal portfolio homepage using HTML and CSS.
+Requirements (restated here in comments as requested):
+● The header should contain your name and navigation links (Home, About, Contact).
+● Use position: fixed for the header so it stays at the top when scrolling.
+● The main section should have a short bio paragraph and a profile image.
+● Use different CSS units (px, em, %, vh, rem) across elements.
+● Use custom background color and text color combinations that maintain contrast.
+● The footer should always stay at the bottom of the page (use flexbox or positioning).
+*/
+
+/* --- Basic reset and variables --- */
+:root{
+  --bg:#0f1724;          /* dark navy background */
+  --card:#0b1220;        /* slightly lighter card bg */
+  --accent:#ffd166;      /* warm accent color for contrast */
+  --muted:#a6b0c3;       /* muted text color */
+  --white:#ffffff;
+  --max-width:1100px;
+  --header-height:64px;  /* px unit */
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Use full viewport height and a column flex so the footer can stick to bottom */
+html,body{height:100%;}
+body{
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: linear-gradient(180deg, var(--bg) 0%, #06111a 100%);
+  color: var(--white);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+  display:flex;
+  flex-direction:column;
+  min-height:100vh; /* ensure footer can be placed at bottom */
+}
+
+/* Page wrapper to constrain width */
+.page-wrapper{display:flex;flex-direction:column;min-height:100vh;}
+
+/* ========== Header (fixed) ========== */
+/* Use position: fixed as required */
+.site-header{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  height:var(--header-height); /* uses px */
+  background:rgba(6,10,20,0.85);
+  backdrop-filter: blur(4px);
+  border-bottom:1px solid rgba(255,209,102,0.08);
+  z-index:1000;
+}
+
+/* header inner uses % and rem for spacing */
+.header-inner{
+  max-width:var(--max-width);
+  margin:0 auto;
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 2.5%; /* % unit */
+}
+
+/* Title and nav styling */
+.site-title{
+  font-size:1.125rem; /* rem-like size expressed in rem's default — using rem for scaling */
+  letter-spacing:0.02em;
+  color:var(--accent);
+  margin:0;
+}
+
+/* Navigation links */
+.main-nav a{
+  color:var(--white);
+  text-decoration:none;
+  margin-left:1.25rem; /* px-based spacing */
+  font-size:0.95rem;
+  padding:0.35rem 0.5rem;
+  border-radius:6px;
+}
+
+/* small hover affordance */
+.main-nav a:hover,
+.main-nav a:focus{
+  background:rgba(255,209,102,0.06);
+  color:var(--accent);
+  outline:none;
+}
+
+/* Add top padding to main so content is not hidden under the fixed header */
+/* Use vh unit here to demonstrate variety (header offset in vh for small screens) */
+.main-content{
+  padding-top: calc(var(--header-height) + 1rem); /* uses calc with px */
+  flex:1 0 auto;
+  max-width:var(--max-width);
+  margin: 0 auto;
+  width:94%; /* % */
+}
+
+/* ========== Hero section ========== */
+.hero{
+  display:flex;
+  gap:2rem;               /* px units */
+  align-items:center;
+  padding:3rem 1rem;      /* rem and px mixture */
+  margin-top:1rem;
+  background: linear-gradient(90deg, rgba(255,209,102,0.04), rgba(255,255,255,0.01));
+  border-radius:12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+}
+
+/* Profile image uses px width and % for responsiveness */
+.profile-img{
+  width:240px;            /* px */
+  height:240px;           /* px */
+  border-radius:50%;
+  object-fit:cover;
+  border:6px solid rgba(255,209,102,0.14);
+  flex-shrink:0;
+}
+
+/* Bio uses em for font-size to show variety */
+.bio h2{
+  margin:0 0 0.5rem 0;
+  font-size:1.4em;        /* em */
+  color:var(--accent);
+}
+.bio p{
+  color:var(--muted);
+  font-size:1rem;         /* 1rem */
+  max-width:48rem;        /* rem-based maximum width */
+}
+
+/* ========== About & Contact sections ========== */
+.about, .contact{
+  margin-top:2rem;
+  background: var(--card);
+  padding:1.25rem;        /* rem-ish feel */
+  border-radius:10px;
+  border:1px solid rgba(255,255,255,0.03);
+}
+
+/* headings inside sections use different sizes and weight */
+.about h2, .contact h2{
+  font-size:1.125rem;
+  font-weight:700;
+  color:var(--accent);
+  margin-bottom:0.6rem;
+}
+
+/* anchors in content */
+a { color: var(--accent); }
+
+/* ========== Footer (always at bottom) ========== */
+/* Use flex on page wrapper so footer sits at bottom if content short */
+.site-footer{
+  margin-top:auto; /* pushes footer to bottom when page content is short */
+  background: rgba(3,6,12,0.9);
+  border-top: 1px solid rgba(255,209,102,0.06);
+  padding:0.9rem 0; /* rem */
+  text-align:center;
+  color:var(--muted);
+  font-size:0.95rem;
+}
+
+/* Footer inner constrained like header */
+.footer-inner{max-width:var(--max-width);margin:0 auto;width:94%;}
+
+/* ========== Responsive behavior ========== */
+/* Under 800px stack hero vertically and scale image */
+@media (max-width:800px){
+  .hero{flex-direction:column; text-align:center; padding:2rem;}
+  .profile-img{width:40vw;height:40vw; max-width:200px; max-height:200px;} /* uses %/vw */
+  .header-inner{padding:0 3%;}
+  .main-nav a{margin-left:0.5rem;}
+}
+
+/* Under 480px reduce header title size (px unit) */
+@media (max-width:480px){
+  .site-title{font-size:16px;} /* px */
+  .main-nav a{font-size:14px;}
+}
+
+/* small accessibility helper focus styles */
+a:focus{outline: 3px solid rgba(255,209,102,0.18); outline-offset:2px;}

@@ -1,0 +1,115 @@
+/* 
+Question 5 CSS:
+Pricing Table styling
+*/
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    padding: 2rem 5%;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Pricing section */
+.pricing {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Individual Plan */
+.plan {
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    padding: 2rem;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.plan h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.plan .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.plan ul {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.plan ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.plan .btn {
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.plan .btn:hover {
+    background-color: #45a049;
+}
+
+/* Hover effect on plan card */
+.plan:hover {
+    transform: scale(1.05);
+    background-color: #f0ffe6;
+}
+
+/* Highlight most popular plan */
+.plan.popular {
+    border: 3px solid #ff9800;
+    background-color: #fff3e0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1rem 0;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 950px) {
+    .pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+}

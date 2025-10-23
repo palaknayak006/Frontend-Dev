@@ -1,0 +1,115 @@
+/* 
+Question 2 CSS:
+Multi-section informational webpage
+*/
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+    color: #fff;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section styling */
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 5px solid #fff;
+}
+
+/* Parallax sections */
+.parallax1 {
+    background-image: url('paris.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.parallax2 {
+    background-image: url('tokyo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Linear gradient section */
+.gradient-linear {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+/* Radial gradient section */
+.gradient-radial {
+    background: radial-gradient(circle, #6a11cb, #2575fc);
+}
+
+/* Content inside sections */
+section .content {
+    max-width: 700px;
+    padding: 2rem;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 15px;
+}
+
+section h2 {
+    font-size: 2.5rem; /* different font size */
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+section p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #111;
+    color: #fff;
+}
