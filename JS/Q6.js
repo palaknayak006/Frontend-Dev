@@ -1,0 +1,20 @@
+// Q6. Progressive Discount System
+
+let totalPurchase = 7500;
+let discount = 0;
+
+// Apply discount based on amount
+if (totalPurchase >= 10000) {
+    discount = 25;
+} else if (totalPurchase >= 5000) {
+    discount = 15;
+} else if (totalPurchase >= 2000) {
+    discount = 5;
+}
+
+let finalPrice = totalPurchase - (totalPurchase * discount) / 100;
+
+// Print results
+console.log("Original Total:", totalPurchase);
+console.log("Discount Applied:", discount + "%");
+console.log("Final Price:", Math.round(finalPrice));
