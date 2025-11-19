@@ -1,0 +1,72 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fixed Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #111;
+    text-align: center;
+    padding: 1rem 0;
+    z-index: 1000;
+}
+
+/* Fixed Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #111;
+    text-align: center;
+    padding: 0.8rem 0;
+    font-size: 0.9rem;
+    z-index: 1000;
+}
+
+/* Main content area leaves space for header/footer */
+main {
+    padding-top: 80px;   /* Prevents overlap with header */
+    padding-bottom: 60px; /* Prevents overlap with footer */
+}
+
+/* Section Base Styles */
+section {
+    min-height: 100vh;       /* Full screen height for each section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Linear Gradient Section */
+.linear-gradient {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    background-attachment: fixed; /* Creates parallax-like effect */
+}
+
+/* Radial Gradient Section */
+.radial-gradient {
+    background: radial-gradient(circle at center, #ff9a9e, #fad0c4);
+    color: #333;
+}
+
+/* Text Styling */
+h1, h2 {
+    margin-bottom: 1rem;
+}
+
+p {
+    max-width: 600px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}

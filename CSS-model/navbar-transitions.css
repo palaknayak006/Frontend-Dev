@@ -1,0 +1,101 @@
+/* ========== General Page Styling ========== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background-color: #004aad;
+  color: white;
+  padding: 1.5rem 0;
+}
+
+/* ========== Navigation Bar Styling ========== */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-top: 2px solid #004aad;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+/* Links inside navbar */
+.navbar a {
+  display: block;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: #004aad;
+  font-weight: 600;
+  border-right: 1px solid #ddd;
+  transition: all 0.3s ease; /* Smooth hover transitions */
+}
+
+/* Remove border from last item */
+.navbar li:last-child a {
+  border-right: none;
+}
+
+/* Hover Effect */
+.navbar a:hover {
+  background-color: #004aad;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Active Link Highlight */
+.navbar a.active {
+  background-color: #003a87;
+  color: white;
+  border-bottom: 3px solid #ffcc00;
+}
+
+/* ========== Responsive Navbar ========== */
+@media (max-width: 700px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar li:last-child a {
+    border-bottom: none;
+  }
+}
+
+/* ========== Main Content ========== */
+.content {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* ========== Footer ========== */
+footer {
+  text-align: center;
+  background-color: #eee;
+  padding: 1rem;
+  font-size: 0.9rem;
+}

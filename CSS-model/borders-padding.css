@@ -1,0 +1,80 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    background-color: #004aad;
+    color: white;
+    padding: 1.5rem 0;
+}
+
+main {
+    padding: 2rem;
+}
+
+/* Flexbox container for boxes */
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Base Box Style */
+.box {
+    background-color: white;
+    padding: 20px;
+    width: 180px;
+    text-align: center;
+    border: 3px solid #555;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Different Border Styles */
+.solid {
+    border-style: solid;
+}
+
+.dashed {
+    border-style: dashed;
+}
+
+.double {
+    border-style: double;
+}
+
+.groove {
+    border-style: groove;
+}
+
+/* Rounded Corners Examples */
+.rounded.small-radius {
+    border-radius: 10px;
+}
+
+.rounded.large-radius {
+    border-radius: 25px;
+}
+
+/* Hover Effect */
+.box:hover {
+    border-color: #004aad; /* Changes color on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #eee;
+    font-size: 0.9rem;
+}

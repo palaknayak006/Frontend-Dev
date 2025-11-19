@@ -1,0 +1,123 @@
+/* ========== General Styling ========== */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #004aad;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+main {
+  padding: 2rem;
+}
+
+h2 {
+  color: #004aad;
+  margin-top: 2rem;
+}
+
+section {
+  margin-bottom: 3rem;
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* ========== 1️⃣ ATTRIBUTE SELECTORS ========== */
+
+/* Selects input elements with type="text" */
+input[type="text"] {
+  border: 2px solid #004aad;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+/* Selects links starting with "https" */
+a[href^="https"] {
+  color: #1dd1a1;
+  font-weight: bold;
+}
+
+/* Selects links starting with "http" (not secure) */
+a[href^="http:"] {
+  color: #ff6b6b;
+}
+
+/* ========== 2️⃣ PSEUDO-CLASSES ========== */
+
+/* Change background when hovering */
+.decorated-text:hover {
+  background-color: #dceaff;
+}
+
+/* Change border color when input is focused */
+input:focus {
+  outline: none;
+  border-color: #1dd1a1;
+  box-shadow: 0 0 6px rgba(29, 209, 161, 0.5);
+}
+
+/* Select every odd item in list */
+.color-list li:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+/* Select every even item in list */
+.color-list li:nth-child(even) {
+  background-color: #dceaff;
+}
+
+/* ========== 2️⃣ PSEUDO-ELEMENTS ========== */
+
+/* Adds text before and after paragraph */
+.decorated-text::before {
+  content: "✨ ";
+  color: gold;
+}
+
+.decorated-text::after {
+  content: " ✨";
+  color: gold;
+}
+
+/* ========== 3️⃣ COMBINATORS ========== */
+
+/* Child combinator (>) - applies only to direct child <p> of .combinator-demo */
+.combinator-demo > p {
+  color: #004aad;
+  font-weight: bold;
+}
+
+/* Descendant combinator - applies to any <p> inside nested <div> */
+.combinator-demo div p {
+  color: #ff6b6b;
+}
+
+/* Adjacent sibling (+) - applies to <p> that immediately follows another <p> */
+.combinator-demo p + p {
+  background-color: #dceaff;
+}
+
+/* General sibling (~) - applies to all <p> after a .next class paragraph */
+.combinator-demo .next ~ p {
+  font-style: italic;
+  color: #1dd1a1;
+}
+
+/* ========== Footer ========== */
+footer {
+  text-align: center;
+  background-color: #eee;
+  padding: 1rem;
+  font-size: 0.9rem;
+}

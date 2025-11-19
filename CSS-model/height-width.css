@@ -1,0 +1,76 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Allows vertical centering */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    background-color: #003f7f;
+    color: white;
+    padding: 1.2rem 0;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;  /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+}
+
+/* Flex container for boxes */
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Base Box Style */
+.box {
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* 1️⃣ Box with px units */
+.box-px {
+    width: 200px;
+    height: 150px;
+    background-color: #ff6b6b;
+}
+
+/* 2️⃣ Box with % and vh + min/max properties */
+.box-percent {
+    width: 40%;
+    max-width: 300px;
+    height: 20vh;
+    min-height: 100px;
+    background-color: #1dd1a1;
+}
+
+/* 3️⃣ Box with em units and overflow */
+.box-em {
+    width: 20em;
+    height: 8em;
+    overflow: auto; /* Adds scrollbars if content exceeds box */
+    background-color: #5f27cd;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #eee;
+    padding: 1rem;
+    font-size: 0.9rem;
+}

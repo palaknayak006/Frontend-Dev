@@ -1,0 +1,106 @@
+/* ========== General Page Styling ========== */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background-color: #004aad;
+  color: white;
+  padding: 1.5rem 0;
+}
+
+/* ========== Center the Boxes Using Flexbox ========== */
+.box-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin: 2rem;
+}
+
+/* ========== Base Box Styling ========== */
+.box-demo {
+  width: 200px;
+  height: 200px;
+  background-color: #dbeafe; /* Content layer color */
+  color: #222;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+/* Padding, Border, and Margin Visualization */
+.standard-box {
+  padding: 20px;
+  border: 10px solid #2563eb; /* Blue border */
+  margin: 20px;
+  outline: 2px dashed #93c5fd; /* Visual margin outline */
+  background-clip: content-box; /* Keep color inside content */
+}
+
+/* Default box model = content-box (padding + border increase total size) */
+
+/* Border-box Model */
+.border-box {
+  padding: 20px;
+  border: 10px solid #059669; /* Green border */
+  margin: 20px;
+  outline: 2px dashed #a7f3d0;
+  box-sizing: border-box; /* Total width includes padding & border */
+  background-color: #d1fae5;
+}
+
+/* Hover effect for fun visualization */
+.box-demo:hover {
+  transform: scale(1.05);
+}
+
+/* ========== Description Section ========== */
+.description {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.description h2 {
+  color: #004aad;
+  margin-bottom: 1rem;
+}
+
+.description p {
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.description ul {
+  list-style-type: disc;
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+mark {
+  background-color: #fef08a;
+  padding: 0 4px;
+  border-radius: 4px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #eee;
+  padding: 1rem;
+  font-size: 0.9rem;
+}

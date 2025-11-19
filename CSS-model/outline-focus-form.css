@@ -1,0 +1,98 @@
+/* ========== General Page Styling ========== */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background-color: #004aad;
+  color: white;
+  padding: 1.5rem 0;
+}
+
+/* ========== Center Form with Flexbox ========== */
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+/* ========== Form Styling ========== */
+form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem; /* Uniform spacing between elements */
+}
+
+/* Label Styling */
+label {
+  font-weight: bold;
+  color: #004aad;
+}
+
+/* Input & Textarea Base Styles */
+input, textarea {
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  outline: 2px solid transparent; /* Prepare outline for animation */
+  outline-offset: 4px;
+}
+
+/* ========== Outline Demonstration ========== */
+
+/* Default outline removed, custom styles added */
+input:focus, textarea:focus {
+  outline: 2px solid #004aad; /* Blue focus outline */
+  outline-offset: 4px; /* Creates spacing between outline and element */
+  border-color: #004aad;
+  box-shadow: 0 0 6px rgba(0, 74, 173, 0.3);
+}
+
+/* Example: Textarea with dashed outline to show variation */
+textarea:focus {
+  outline-style: dashed;
+}
+
+/* Example: Input with dotted outline style */
+input[type="text"]:focus {
+  outline-style: dotted;
+}
+
+/* ========== Button Styling ========== */
+button {
+  background-color: #004aad;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #003a87;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #eee;
+  padding: 1rem;
+  font-size: 0.9rem;
+}

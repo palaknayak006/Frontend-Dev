@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height and Width Practice</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="height-width.css">
+</head>
+<body>
+    <header>
+        <h1>Height and Width Practice Layout</h1>
+        <p>Examples showing different units, size limits, and overflow behavior.</p>
+    </header>
+
+    <main>
+        <section class="box-container">
+            <!-- Box using px units -->
+            <div class="box box-px">
+                <p>Width: 200px<br>Height: 150px</p>
+            </div>
+
+            <!-- Box using % and min/max properties -->
+            <div class="box box-percent">
+                <p>Width: 40% (max 300px)<br>Height: 20vh (min 100px)</p>
+            </div>
+
+            <!-- Box using em and overflow -->
+            <div class="box box-em">
+                <p>
+                    Width: 20em<br>Height: 8em<br>
+                    Overflow: scroll<br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    This box shows how content behaves when overflow occurs.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by [Your Name] — Height & Width Demo</p>
+    </footer>
+</body>
+</html>
