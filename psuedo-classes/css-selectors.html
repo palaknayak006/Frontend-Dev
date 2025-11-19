@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors Practice Page</title>
+  <link rel="stylesheet" href="css-selectors.css">
+</head>
+<body>
+  <header>
+    <h1>CSS Selectors Practice</h1>
+    <p>This page demonstrates different CSS selectors using real HTML elements.</p>
+  </header>
+
+  <main>
+    <section class="examples">
+      <!-- Element Selector Example -->
+      <article>
+        <h2>1. Element Selector</h2>
+        <p>This paragraph is styled using an <code>element selector</code> — it targets all &lt;p&gt; elements directly.</p>
+      </article>
+
+      <!-- Class Selector Example -->
+      <article>
+        <h2>2. Class Selector</h2>
+        <p class="highlight">This text uses a <code>class selector</code> to apply a yellow highlight.</p>
+      </article>
+
+      <!-- ID Selector Example -->
+      <article>
+        <h2>3. ID Selector</h2>
+        <p id="special">This paragraph has a unique <code>id="special"</code> and gets a blue border.</p>
+      </article>
+
+      <!-- Attribute Selector Example -->
+      <article>
+        <h2>4. Attribute Selector</h2>
+        <a href="https://example.com" target="_blank">Visit Example.com</a>
+        <a href="https://openai.com">Visit OpenAI</a>
+        <p>Links with <code>target="_blank"</code> are styled differently using an <code>attribute selector</code>.</p>
+      </article>
+
+      <!-- Combinators Example -->
+      <article>
+        <h2>5. Combinator Selectors</h2>
+
+        <div class="parent">
+          <p>This is a <strong>child</strong> paragraph directly inside the parent (targeted using <code>&gt;</code>).</p>
+          <div class="nested">
+            <p>This paragraph is nested deeper (targeted using descendant selector).</p>
+          </div>
+        </div>
+
+        <p class="sibling">This paragraph comes <strong>immediately after</strong> the parent div (targeted with <code>+</code>).</p>
+        <p class="sibling2">This one comes later and is styled using <code>~</code> (general sibling selector).</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CSS Selectors Practice | HTML & CSS Only</p>
+  </footer>
+</body>
+</html>

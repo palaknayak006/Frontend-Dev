@@ -1,0 +1,79 @@
+/* =============================
+   General Page Styling
+============================= */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f0f4ff, #ffffff);
+  color: #333;
+}
+
+header, footer {
+  text-align: center;
+  background-color: #004080;
+  color: white;
+  padding: 1.2em 0;
+}
+
+/* =============================
+   Flexbox Layout for Centering
+============================= */
+.comparison-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+/* =============================
+   Base Box Styling
+============================= */
+.box {
+  width: 300px;
+  padding: 30px;
+  border: 8px solid #004080;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Default Box (content-box behavior) */
+.default-box {
+  background-color: #007bff;
+  box-sizing: content-box; /* default */
+}
+
+/* Border-Box Example */
+.border-box {
+  background-color: #28a745;
+  box-sizing: border-box;
+}
+
+/* =============================
+   Headings Inside Boxes
+============================= */
+.box h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* =============================
+   Responsive Design
+============================= */
+@media (max-width: 700px) {
+  .comparison-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 90%;
+  }
+}

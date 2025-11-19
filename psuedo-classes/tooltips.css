@@ -1,0 +1,101 @@
+/* ==============================
+   General Page Styling
+============================== */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+}
+
+header, footer {
+  text-align: center;
+  background-color: #004080;
+  color: white;
+  padding: 1em 0;
+}
+
+/* ==============================
+   Center Everything with Flexbox
+============================== */
+.tooltip-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  min-height: 60vh;
+  padding: 20px;
+}
+
+/* ==============================
+   Tooltip Styling
+============================== */
+.tooltip-item {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+/* The icon or text that triggers the tooltip */
+.tooltip-target {
+  font-size: 2.5rem;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Small zoom effect when hovering */
+.tooltip-target:hover {
+  transform: scale(1.1);
+}
+
+/* The tooltip itself */
+.tooltip-text {
+  position: absolute;
+  bottom: 120%; /* Show tooltip above the element */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Little arrow under the tooltip */
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -6px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+/* Show tooltip when hovering */
+.tooltip-item:hover .tooltip-text {
+  opacity: 1;
+}
+
+/* ==============================
+   Responsive Layout
+============================== */
+@media (max-width: 600px) {
+  .tooltip-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .tooltip-target {
+    font-size: 2rem;
+  }
+}

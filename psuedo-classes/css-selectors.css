@@ -1,0 +1,119 @@
+/* =============================
+   General Page Styling
+============================= */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+header, footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.examples article {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+/* =============================
+   1. Element Selector
+   Targets all <p> elements on the page.
+============================= */
+p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* =============================
+   2. Class Selector
+   Targets elements with a specific class name.
+============================= */
+.highlight {
+  background-color: #fffb99;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+/* =============================
+   3. ID Selector
+   Targets a unique element using its ID.
+============================= */
+#special {
+  border: 2px solid #007bff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* =============================
+   4. Attribute Selector
+   Targets elements based on their attributes.
+============================= */
+a[target="_blank"] {
+  color: #e60000;
+  text-decoration: underline;
+}
+
+/* =============================
+   5. Combinator Selectors
+============================= */
+
+/* Child combinator (>) — targets <p> directly inside .parent */
+.parent > p {
+  background-color: #e0f7ff;
+  padding: 5px;
+}
+
+/* Descendant combinator — targets all <p> inside .parent, no matter how deep */
+.parent p {
+  font-style: italic;
+}
+
+/* Adjacent sibling (+) — targets the element immediately after .parent */
+.parent + .sibling {
+  color: #008000;
+  font-weight: bold;
+}
+
+/* General sibling (~) — targets all elements that come after .parent */
+.parent ~ .sibling2 {
+  color: #aa00ff;
+}
+
+/* =============================
+   Links and Misc Styling
+============================= */
+a {
+  color: #004080;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =============================
+   Responsive Design
+============================= */
+@media (max-width: 700px) {
+  main {
+    padding: 10px;
+  }
+  .examples article {
+    padding: 15px;
+  }
+}

@@ -1,0 +1,101 @@
+/* Basic Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header, footer {
+  text-align: center;
+  background-color: #004080;
+  color: white;
+  padding: 1em 0;
+}
+
+/* Flexbox Layout */
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.example {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+}
+
+/* :hover example */
+.hover-link {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hover-link:hover {
+  color: #ff6600;
+}
+
+/* :focus example */
+.focus-input {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.focus-input:focus {
+  border-color: #00b300;
+}
+
+/* :active example */
+.active-button {
+  background-color: #0080ff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.active-button:active {
+  background-color: #004080;
+}
+
+/* :nth-child() example */
+.nth-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 120px;
+  text-align: left;
+}
+
+.nth-list li:nth-child(odd) {
+  background-color: #e6f0ff;
+}
+
+.nth-list li:nth-child(even) {
+  background-color: #cce0ff;
+}
+
+.nth-list li {
+  padding: 5px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .examples {
+    flex-direction: column;
+    align-items: center;
+  }
+}
