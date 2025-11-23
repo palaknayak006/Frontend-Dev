@@ -1,97 +1,145 @@
-# Frontend_Dev
+🎨 Frontend Development — Learning Roadmap
+🚀 Journey to Becoming a Frontend Developer
 
-### *Lecture 1-2: Introduction to Web Development*
-*Topics:*
-- Fundamentals of Web Architecture  
-- 3-Tier Structure: Frontend, Backend, Database  
-- Setting up *VS Code* and *Live Server*
+All assignments are reviewed & guided by:
+👨‍🏫 Sahil Kumar Sir
+👨‍🏫 Deepak Prasad Sir
+(Respect, dedication, consistency — Success formula 🔥)
+
+📘 Course Modules & Progress
+🌐 Lecture 1–2: Introduction to Web Development
+📚 Topics Covered
+
+🧠 Fundamentals of Web Architecture
+
+🏗 3-Tier Structure → Frontend | Backend | Database
+
+🛠 Setting up VS Code + Live Server
+
+✅ Assignments
+Assignment Title	Status
+Intro to Web Development Submission	✅ Completed
+📄 Lecture 3–5: HTML Basics
+📚 Topics Covered
+
+HTML Structure → Tags + Elements
+
+✔ Semantic HTML
+
+✔ Headings, Paragraphs, Links, Lists
+
+🖼 Adding Images
+
+✅ Assignments
+| Assignment Title       | Status      |
+| ---------------------- | ----------- |
+| HTML Basics Submission | ✅ Completed |
 
 
----
+🔳 Lecture 6–7: Block & Inline Elements
+📚 Topics Covered
 
-### *Lecture 3-5: HTML Basics*
-*Topics:*
-- HTML Structure, Tags, and Elements  
-- Semantic HTML  
-- Lists, Links, Headings, Paragraphs, Images  
+Block vs Inline Elements
 
-*📘 Assignments:*
-- Submission: Intro to Web Development  
-- Submission: HTML Basics
+Attributes, Tables, Headings
 
----
+🧾 HTML Forms & Input Types
 
-### *Lecture 6-7: HTML Block and Inline Elements*
-*Topics:*
-- Block vs Inline Elements  
-- Attributes, Headings, Paragraphs, Tables  
-- Dropdowns, Lists, Quotations, and Layout  
-- HTML Forms and Input Types  
-- <marquee> tag demonstration  
+📥 Dropdowns, Lists, Quotations
 
----
+🎯 Tag Demonstration
 
-### *Lecture 8-10: HTML Iframes*
-*Topics:*
-- Iframes and URI Concepts  
-- HTML Head, Charset, and Entities  
-- Embedding external content  
-- HTML Form Elements and Security Concepts  
+🪟 Lecture 8–10: Iframes & Advanced HTML
+📚 Topics Covered
 
----
+Embedding content with iframes
 
-### *Lecture 11-13: Introduction to CSS*
-*Topics:*
-- CSS Syntax & Types (Inline, Internal, External)  
-- CSS Selectors  
-- Colors, Backgrounds, and Box Model  
-- Units (px, em, rem, %)  
-- Layout & Element Positioning  
-- box-sizing, Inline vs Block Elements  
+🌐 URI concepts
 
-*🧩 Task:*
-> Design a simple webpage using internal and external CSS.  
-> Apply background colors, margins, padding, and element positioning.
+🔤 HTML head, meta, charset, entities
 
----
+🔐 Basic form security
 
-### *Lecture 14-15: CSS Flexbox and Grid*
-*Topics:*
-- Flexbox and Grid Basics  
-- CSS Transformations & Animations  
-- Layout Practice with Flex and Grid  
+🎨 Lecture 11–13: CSS Introduction
+📚 Topics Covered
 
-*🧩 Task:*
-> Create a *Calculator Layout* using *CSS Grid*.
+CSS Syntax & Types → Inline / Internal / External
 
----
+Selectors
 
-### *Lecture 16-18: CSS Model and Transformations*
-*Topics:*
-- Borders, Padding, Height/Width  
-- Gradients, Shadows, Selectors  
-- Typography, Outline, and Transitions  
-- Navigation Bars and CSS Combinators  
+Colors & Backgrounds
 
----
+📦 Box Model
 
-### *Lecture 19-21: CSS Classes and UI Design*
-*Topics:*
-- Pseudo-classes, Tooltips, and Animations  
-- Transitions & Transform Properties  
-- Buttons and User Interface Design  
-- Box Sizing and Image Styling  
+📏 Units → px, %, em, rem
 
-*🧩 Task:*
-> Create an animation that moves an element diagonally using transition and transform.
+Positioning + box-sizing
 
----
+🧩 Assignment by Sahil Sir
 
-### *Lecture 22-24: Responsive CSS*
-*Topics:*
-- Filters and Responsive Design  
-- Media Queries  
-- Making layouts adaptable for different screen sizes  
-- Responsive Design Cheat Sheet  
+Create a webpage using internal + external CSS with
+backgrounds, margins, and padding.
 
----# Frontend-Dev
+🔳 Lecture 14–15: Flexbox & Grid
+📚 Topics Covered
+
+🤸 Flexbox fundamentals
+
+CSS Grid layout basics
+
+✨ CSS Animations & Transformations
+
+🧩 Assignment by Deepak Sir
+
+Build a Calculator Layout using CSS Grid.
+
+🧱 Lecture 16–18: CSS Model & Transformations
+📚 Topics Covered
+
+Borders, Padding, Dimensions
+
+🎨 Gradients, Shadows
+
+🔤 Typography
+
+✨ Transitions & Transform
+
+🧭 Navigation Bars + CSS Combinators
+
+🎭 Lecture 19–21: CSS UI & Interactions
+📚 Topics Covered
+
+Hover effects + Pseudo-classes
+
+Button Designs
+
+Tooltip UI
+
+Image Styling
+
+Transitions + Animations
+
+🧩 Assignment by Sahil Sir
+
+Create an animation moving an element diagonally ↘ using
+transition + transform.
+
+📱 Lecture 22–24: Responsive CSS
+📚 Topics Covered
+
+Filters & Responsive Images
+
+📟 Media Queries (Mobile First)
+
+Responsive Page Layouts
+
+📝 Responsive Design Cheat Sheet
+
+⭐ Assignment Tracker
+| Module        | Assignment                      | Assigned By      | Due Date         | Status         |
+| ------------- | ------------------------------- | ---------------- | ---------------- | -------------- |
+| HTML Intro    | Submit Web Dev Intro            | 👨‍🏫 Sahil Sir  | Given              | ✅ Completed   |
+| HTML Basics   | Basic HTML Webpage              | 👨‍🏫 Deepak Sir | Given              | ✅ Completed   |
+| CSS Basics    | Internal + External CSS Webpage | 👨‍🏫 Sahil Sir  | After Lecture 13   | ✅ Completed   |
+| Flex/Grid     | Calculator UI with Grid         | 👨‍🏫 Deepak Sir | After Lecture 15   | ✅ Completed   |
+
