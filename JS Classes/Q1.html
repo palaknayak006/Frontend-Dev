@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Q1 — E-Commerce Product Manager</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    /* Simple styling to make output readable */
+    body { font-family: system-ui, Arial, sans-serif; padding: 20px; background:#f7f8fa; color:#333; }
+    .container { max-width:900px; margin:0 auto; background:#fff; padding:20px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.06); }
+    h1 { margin-top:0; font-size:20px; }
+    .controls { display:flex; gap:8px; margin-bottom:12px; align-items:center; }
+    input, select { padding:8px 10px; font-size:14px; }
+    button { padding:8px 12px; cursor:pointer; }
+    ul.products { list-style:none; padding:0; margin:0; }
+    ul.products li { padding:10px; border-bottom:1px solid #eee; display:flex; justify-content:space-between; align-items:center; }
+    .meta { color:#666; font-size:13px; }
+    .badge { background:#eee; padding:4px 8px; border-radius:999px; font-size:12px; }
+    .actions button { margin-left:6px; }
+    .note { margin-top:12px; color:#555; font-size:13px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Q1 — E-Commerce Product Manager</h1>
+
+    <div class="controls">
+      <input id="productName" placeholder="Product name (e.g. Gaming Chair)" />
+      <input id="productPrice" placeholder="Price (number)" type="number" />
+      <input id="productCategory" placeholder="Category (e.g. furniture)" />
+      <button id="addProductBtn">Add Product</button>
+      <button id="showExpensiveBtn">Show > ₹1000 (console)</button>
+    </div>
+
+    <ul id="productList" class="products"></ul>
+
+    <p class="note">Use the list buttons to apply discount (10%) or view details in console.</p>
+  </div>
+
+  <script src="Q1.js"></script>
+</body>
+</html>

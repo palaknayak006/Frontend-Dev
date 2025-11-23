@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Form Validator</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f3f3f3;
+            padding: 20px;
+        }
+
+        .container {
+            width: 350px;
+            background: white;
+            padding: 20px;
+            margin: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .error {
+            color: red;
+            font-size: 13px;
+            margin-top: -5px;
+        }
+
+        .success {
+            color: green;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Student Registration</h2>
+
+        <label>Name</label>
+        <input type="text" id="name">
+        <p id="nameError" class="error"></p>
+
+        <label>Email</label>
+        <input type="text" id="email">
+        <p id="emailError" class="error"></p>
+
+        <label>Phone</label>
+        <input type="text" id="phone">
+        <p id="phoneError" class="error"></p>
+
+        <label>Password</label>
+        <input type="password" id="password">
+        <p id="passError" class="error"></p>
+
+        <button onclick="validateForm()">Submit</button>
+        <p id="finalMsg"></p>
+    </div>
+
+    <script src="Q2.js"></script>
+</body>
+</html>

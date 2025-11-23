@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form Validation</title>
+
+    <style>
+        body {
+            background: #eef2f3;
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        .container {
+            width: 400px;
+            background: #fff;
+            padding: 25px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 12px 0;
+            border-radius: 5px;
+            border: 2px solid #ccc;
+            font-size: 15px;
+        }
+
+        input.error {
+            border-color: red;
+        }
+
+        input.success {
+            border-color: green;
+        }
+
+        .error-text {
+            color: red;
+            margin-top: -8px;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        .success-box {
+            margin-top: 15px;
+            padding: 15px;
+            background: #e8ffe8;
+            border-left: 4px solid green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Login Form</h2>
+
+        <label>Username</label>
+        <input type="text" id="username" placeholder="Enter username">
+        <p id="userError" class="error-text"></p>
+
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Enter password">
+        <p id="passError" class="error-text"></p>
+
+        <button id="loginBtn">Login</button>
+
+        <div id="successMsg" class="success-box"></div>
+    </div>
+
+    <script src="Q7.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Q9 – Shopping Cart (Classes + Regex)</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background: #f4f4f4;
+    }
+    .container {
+        background: white;
+        padding: 20px;
+        width: 450px;
+        border-radius: 10px;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    input, button {
+        width: 100%;
+        padding: 8px;
+        margin-top: 10px;
+    }
+    #cartOutput {
+        background: #eee;
+        padding: 15px;
+        margin-top: 15px;
+        border-radius: 8px;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <h2>Shopping Cart</h2>
+
+    <h3>Add Item</h3>
+    <input type="text" id="itemName" placeholder="Item name">
+    <input type="number" id="itemPrice" placeholder="Price">
+    <input type="number" id="itemQty" placeholder="Quantity">
+
+    <button id="addItemBtn">Add Item</button>
+
+    <h3>Apply Coupon</h3>
+    <input type="text" id="coupon" placeholder="Enter coupon (SAVE20, DISC10)">
+    <button id="applyCouponBtn">Apply Coupon</button>
+
+    <h3>Cart Summary</h3>
+    <pre id="cartOutput"></pre>
+</div>
+
+<script src="Q9.js"></script>
+</body>
+</html>
