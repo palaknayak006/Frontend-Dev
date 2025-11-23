@@ -1,145 +1,153 @@
-🎨 Frontend Development — Learning Roadmap
-🚀 Journey to Becoming a Frontend Developer
+# 🎨 **Frontend Development — Aesthetic Learning Roadmap**
 
-All assignments are reviewed & guided by:
-👨‍🏫 Sahil Kumar Sir
-👨‍🏫 Deepak Prasad Sir
-(Respect, dedication, consistency — Success formula 🔥)
+## 🚀 **Journey to Becoming a Frontend Developer**
 
-📘 Course Modules & Progress
-🌐 Lecture 1–2: Introduction to Web Development
-📚 Topics Covered
+### Guided & Reviewed by:
 
-🧠 Fundamentals of Web Architecture
+* 👨‍🏫 **Sahil Kumar Sir**
+* 👨‍🏫 **Deepak Prasad Sir**
 
-🏗 3-Tier Structure → Frontend | Backend | Database
+> *Respect • Dedication • Consistency — Your success formula 🔥*
 
-🛠 Setting up VS Code + Live Server
+---
 
-✅ Assignments
-Assignment Title	Status
-Intro to Web Development Submission	✅ Completed
-📄 Lecture 3–5: HTML Basics
-📚 Topics Covered
+## 📘 **Course Modules & Progress Overview**
 
-HTML Structure → Tags + Elements
+---
 
-✔ Semantic HTML
+## 🌐 **Lecture 1–2: Introduction to Web Development**
 
-✔ Headings, Paragraphs, Links, Lists
+### 📚 Topics Covered
 
-🖼 Adding Images
+* 🧠 **Fundamentals of Web Architecture**
+* 🏗 **3-Tier Structure** → *Frontend | Backend | Database*
+* 🛠 **VS Code + Live Server Setup**
 
-✅ Assignments
+### ✅ Assignments
+
+* **Intro to Web Development Submission** — ✅ *Completed*
+
+---
+
+## 📄 **Lecture 3–5: HTML Basics**
+
+### 📚 Topics Covered
+
+* 🏷 **HTML Structure → Tags + Elements**
+* ✔ **Semantic HTML**
+* ✔ **Headings, Paragraphs, Links, Lists**
+* 🖼 **Adding Images**
+
+### ✅ Assignments
+
 | Assignment Title       | Status      |
 | ---------------------- | ----------- |
 | HTML Basics Submission | ✅ Completed |
 
+---
 
-🔳 Lecture 6–7: Block & Inline Elements
-📚 Topics Covered
+## 🔳 **Lecture 6–7: Block & Inline Elements**
 
-Block vs Inline Elements
+### 📚 Topics Covered
 
-Attributes, Tables, Headings
+* 🔲 **Block vs Inline Elements**
+* 🏷 **Attributes, Tables, Headings**
+* 🧾 **HTML Forms & Input Types**
+* 📥 **Dropdowns, Lists, Quotations**
+* 🎯 **Tag Demonstration**
 
-🧾 HTML Forms & Input Types
+---
 
-📥 Dropdowns, Lists, Quotations
+## 🪟 **Lecture 8–10: Iframes & Advanced HTML**
 
-🎯 Tag Demonstration
+### 📚 Topics Covered
 
-🪟 Lecture 8–10: Iframes & Advanced HTML
-📚 Topics Covered
+* 🖼 **Embedding content with iframes**
+* 🌐 **URI Concepts**
+* 🔤 **HTML Head, Meta Tags, Charset, Entities**
+* 🔐 **Basic Form Security**
 
-Embedding content with iframes
+---
 
-🌐 URI concepts
+## 🎨 **Lecture 11–13: CSS Introduction**
 
-🔤 HTML head, meta, charset, entities
+### 📚 Topics Covered
 
-🔐 Basic form security
+* 🎨 **CSS Syntax & Types** → Inline / Internal / External
+* 🏷 **Selectors**
+* 🎨 **Colors & Backgrounds**
+* 📦 **Box Model**
+* 📏 **Units → px, %, em, rem**
+* 📐 **Positioning + box-sizing**
 
-🎨 Lecture 11–13: CSS Introduction
-📚 Topics Covered
+### 🧩 Assignment by Sahil Sir
 
-CSS Syntax & Types → Inline / Internal / External
+* Create a webpage using internal + external CSS with backgrounds, margins, and padding.
 
-Selectors
+---
 
-Colors & Backgrounds
+## 🔳 **Lecture 14–15: Flexbox & Grid**
 
-📦 Box Model
+### 📚 Topics Covered
 
-📏 Units → px, %, em, rem
+* 🤸 **Flexbox Fundamentals**
+* 🧱 **CSS Grid Layout**
+* ✨ **CSS Animations & Transformations**
 
-Positioning + box-sizing
+### 🧩 Assignment by Deepak Sir
 
-🧩 Assignment by Sahil Sir
+* Build a **Calculator UI Layout** using CSS Grid.
 
-Create a webpage using internal + external CSS with
-backgrounds, margins, and padding.
+---
 
-🔳 Lecture 14–15: Flexbox & Grid
-📚 Topics Covered
+## 🧱 **Lecture 16–18: CSS Model & Transformations**
 
-🤸 Flexbox fundamentals
+### 📚 Topics Covered
 
-CSS Grid layout basics
+* 📏 **Borders, Padding, Dimensions**
+* 🎨 **Gradients & Shadows**
+* 🔤 **Typography Essentials**
+* ✨ **Transitions & Transforms**
+* 🧭 **Navigation Bars + CSS Combinators**
 
-✨ CSS Animations & Transformations
+---
 
-🧩 Assignment by Deepak Sir
+## 🎭 **Lecture 19–21: CSS UI & Interactions**
 
-Build a Calculator Layout using CSS Grid.
+### 📚 Topics Covered
 
-🧱 Lecture 16–18: CSS Model & Transformations
-📚 Topics Covered
+* 🖱 **Hover Effects + Pseudo-classes**
+* 🔘 **Button Design & Interactions**
+* 💬 **Tooltip UI**
+* 🖼 **Image Styling**
+* 🎞 **Transitions + Animations**
 
-Borders, Padding, Dimensions
+### 🧩 Assignment by Sahil Sir
 
-🎨 Gradients, Shadows
+* Create an animation moving an element **diagonally ↘** using transition + transform.
 
-🔤 Typography
+---
 
-✨ Transitions & Transform
+## 📱 **Lecture 22–24: Responsive CSS**
 
-🧭 Navigation Bars + CSS Combinators
+### 📚 Topics Covered
 
-🎭 Lecture 19–21: CSS UI & Interactions
-📚 Topics Covered
+* 🎚 **Filters & Responsive Images**
+* 📟 **Media Queries (Mobile First Approach)**
+* 🧩 **Responsive Page Layouts**
+* 📝 **Responsive Design Cheat Sheet**
 
-Hover effects + Pseudo-classes
+---
 
-Button Designs
+# ⭐ **Assignment Tracker (Aesthetic Table)**
 
-Tooltip UI
+| Module         | Assignment                      | Assigned By      | Due Date         | Status      |
+| -------------- | ------------------------------- | ---------------- | ---------------- | ----------- |
+| 🌐 HTML Intro  | Submit Web Dev Intro            | 👨‍🏫 Sahil Sir  | Given            | ✅ Completed |
+| 🏷 HTML Basics | Basic HTML Webpage              | 👨‍🏫 Deepak Sir | Given            | ✅ Completed |
+| 🎨 CSS Basics  | Internal + External CSS Webpage | 👨‍🏫 Sahil Sir  | After Lecture 13 | ✅ Completed |
+| 🔳 Flex/Grid   | Calculator UI with Grid         | 👨‍🏫 Deepak Sir | After Lecture 15 | ✅ Completed |
 
-Image Styling
+---
 
-Transitions + Animations
-
-🧩 Assignment by Sahil Sir
-
-Create an animation moving an element diagonally ↘ using
-transition + transform.
-
-📱 Lecture 22–24: Responsive CSS
-📚 Topics Covered
-
-Filters & Responsive Images
-
-📟 Media Queries (Mobile First)
-
-Responsive Page Layouts
-
-📝 Responsive Design Cheat Sheet
-
-⭐ Assignment Tracker
-| Module        | Assignment                      | Assigned By      | Due Date         | Status         |
-| ------------- | ------------------------------- | ---------------- | ---------------- | -------------- |
-| HTML Intro    | Submit Web Dev Intro            | 👨‍🏫 Sahil Sir  | Given              | ✅ Completed   |
-| HTML Basics   | Basic HTML Webpage              | 👨‍🏫 Deepak Sir | Given              | ✅ Completed   |
-| CSS Basics    | Internal + External CSS Webpage | 👨‍🏫 Sahil Sir  | After Lecture 13   | ✅ Completed   |
-| Flex/Grid     | Calculator UI with Grid         | 👨‍🏫 Deepak Sir | After Lecture 15   | ✅ Completed   |
-
+✨ *Your aesthetic roadmap is ready! Let me know if you want colored headings, borders, icons upgrade, or export as PDF.*
