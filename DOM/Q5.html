@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+    <style>
+        .gallery img {
+            width: 150px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        #modal {
+            position: fixed; inset: 0;
+            background: rgba(0,0,0,0.7);
+            display: none; justify-content: center; align-items: center;
+        }
+        #modalContent {
+            background: white; padding: 10px;
+        }
+        #modalContent img { width: 300px; }
+    </style>
+</head>
+<body>
+
+<h2>Image Gallery</h2>
+
+<div class="gallery">
+    <img src="img1.jpg">
+    <img src="img2.jpg">
+    <img src="img3.jpg">
+    <img src="img4.jpg">
+    <img src="img5.jpg">
+    <img src="img6.jpg">
+</div>
+
+<div id="modal">
+    <div id="modalContent">
+        <img id="bigImage">
+    </div>
+</div>
+
+<script src="Q5.js"></script>
+</body>
+</html>

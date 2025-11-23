@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Filter</title>
+    <style>
+        table { border-collapse: collapse; width: 50%; }
+        td, th { border: 1px solid #333; padding: 8px; }
+        #noResults { color: red; margin-top: 10px; display: none; }
+    </style>
+</head>
+<body>
+
+<h2>Student Filter</h2>
+
+<input type="text" id="search" placeholder="Search...">
+
+<table>
+    <thead>
+        <tr><th>Name</th><th>Branch</th><th>CGPA</th></tr>
+    </thead>
+    <tbody id="tableBody">
+        <tr><td>Riya</td><td>CS</td><td>8.2</td></tr>
+        <tr><td>Aman</td><td>IT</td><td>7.8</td></tr>
+        <tr><td>Kiran</td><td>ECE</td><td>8.9</td></tr>
+        <tr><td>Preeti</td><td>ME</td><td>7.5</td></tr>
+    </tbody>
+</table>
+
+<p id="noResults">No results found</p>
+
+<script src="Q6.js"></script>
+</body>
+</html>
