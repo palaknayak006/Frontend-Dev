@@ -1,4 +1,4 @@
-# 🎨 **Frontend Development — Aesthetic Learning Roadmap**
+# 🎨 **Frontend Development — Learning Roadmap**
 
 ## 🚀 **Journey to Becoming a Frontend Developer**
 
@@ -139,7 +139,7 @@
 
 ---
 
-# ⭐ **Assignment Tracker (Aesthetic Table)**
+# ⭐ **Assignment Tracker (Table)**
 
 | Module         | Assignment                      | Assigned By      | Due Date         | Status      |
 | -------------- | ------------------------------- | ---------------- | ---------------- | ----------- |
@@ -150,4 +150,3 @@
 
 ---
 
-✨ *Your aesthetic roadmap is ready! Let me know if you want colored headings, borders, icons upgrade, or export as PDF.*
