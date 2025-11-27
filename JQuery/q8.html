@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Blog Posts</title>
+
+    <style>
+        body { font-family: Arial; padding: 20px; background: #fcfcfc; }
+
+        .post {
+            background: #fff;
+            padding: 15px;
+            margin: 10px;
+            border-left: 6px solid #2196f3;
+            border-radius: 5px;
+        }
+
+        .highlight {
+            background: #ffe9c9;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Blog Manager</h1>
+
+    <button id="addPost">Add New Post</button>
+    <button id="prependPost">Prepend Featured Post</button>
+    <button id="removeLast">Remove Last Post</button>
+
+    <div id="blogList">
+        <div class="post">Welcome to our first blog post!</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="q8.js"></script>
+
+</body>
+</html>

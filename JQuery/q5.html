@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team Directory</title>
+
+    <style>
+        body { font-family: Arial; padding: 30px; background: #f4f4f4; }
+
+        .department {
+            background: #d9ecff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .manager {
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .employee {
+            padding: 5px 0;
+            cursor: pointer;
+        }
+
+        .contact {
+            display: none;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .highlight {
+            background: #caffc8;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Team Members Directory</h1>
+
+    <div class="department" id="dept1">
+        <p class="manager">Manager: Rahul</p>
+        <div class="employee">Amit <span class="contact"> | amit@mail.com</span></div>
+        <div class="employee">Neha <span class="contact"> | neha@mail.com</span></div>
+        <div class="employee">Rohan <span class="contact"> | rohan@mail.com</span></div>
+    </div>
+
+    <div class="department" id="dept2">
+        <p class="manager">Manager: Priya</p>
+        <div class="employee">Simran <span class="contact"> | simran@mail.com</span></div>
+        <div class="employee">Kabir <span class="contact"> | kabir@mail.com</span></div>
+        <div class="employee">Nisha <span class="contact"> | nisha@mail.com</span></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="q5.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Special Offer Banners</title>
+
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background: #ececec; }
+
+        .banner {
+            width: 90%;
+            padding: 20px;
+            margin: 15px auto;
+            background: #fff3cd;
+            border-left: 6px solid #ff9800;
+            border-radius: 6px;
+            display: none;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Special Offers</h1>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="slide">Slide Up/Down</button>
+    <button id="fade">Fade In/Out</button>
+
+    <div class="banner">🔥 50% OFF on Electronics!</div>
+    <div class="banner">⚡ Flash Deal: Buy 1 Get 1 Free</div>
+    <div class="banner">🎁 Free shipping for 24 hours</div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="q4.js"></script>
+
+</body>
+</html>

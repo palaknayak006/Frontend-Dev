@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive FAQ</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            background: #f7f7f7;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border-left: 5px solid #007bff;
+        }
+
+        .question {
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+
+        .question:hover {
+            color: #007bff;
+        }
+
+        .answer {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+        }
+
+        input {
+            margin-top: 10px;
+            padding: 8px;
+            width: 90%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .highlight {
+            background: #e0f0ff;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Interactive FAQ Section</h1>
+
+    <div class="faq-item">
+        <p class="question">What is jQuery?</p>
+        <p class="answer">jQuery is a fast, small, and feature-rich JavaScript library.</p>
+        <input type="text" placeholder="Your comment...">
+    </div>
+
+    <div class="faq-item">
+        <p class="question">What is AJAX?</p>
+        <p class="answer">AJAX allows web pages to update asynchronously.</p>
+        <input type="text" placeholder="Your comment...">
+    </div>
+
+    <div class="faq-item">
+        <p class="question">What is DOM?</p>
+        <p class="answer">DOM represents the structure of an HTML document.</p>
+        <input type="text" placeholder="Your comment...">
+    </div>
+
+    <div class="faq-item">
+        <p class="question">What is JSON?</p>
+        <p class="answer">JSON is a lightweight data format used for data exchange.</p>
+        <input type="text" placeholder="Your comment...">
+    </div>
+
+    <div class="faq-item">
+        <p class="question">What is API?</p>
+        <p class="answer">API allows communication between applications.</p>
+        <input type="text" placeholder="Your comment...">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="q3.js"></script>
+
+</body>
+</html>

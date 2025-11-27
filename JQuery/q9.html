@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multi-jQuery Widgets</title>
+
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        .widget { padding: 10px; background: #f4f4f4; margin: 10px; border-radius: 5px; }
+        #carousel { height: 120px; background: #d9edf7; padding: 20px; }
+        #modal { display: none; padding: 20px; background: #ffe0e0; border-radius: 8px; }
+    </style>
+</head>
+
+<body>
+
+    <h1>Multi jQuery Versions</h1>
+
+    <div id="carousel" class="widget">Carousel Widget</div>
+    <div id="popup" class="widget">Click to open modal popup</div>
+    <div id="modal">This is a modal popup</div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        var jq1 = $.noConflict(true);
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        var jq2 = $.noConflict(true);
+    </script>
+
+    <script src="q9.js"></script>
+
+</body>
+</html>

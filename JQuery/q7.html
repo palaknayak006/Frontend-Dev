@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Courses</title>
+
+    <style>
+        body { font-family: Arial; padding: 20px; }
+
+        #courseList div {
+            padding: 10px;
+            margin: 6px;
+            background: #f2f6ff;
+            border-radius: 5px;
+        }
+
+        #count {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Course Search</h1>
+
+    <input type="text" id="search" placeholder="Search courses..." style="padding: 10px; width: 300px;">
+
+    <div id="courseList">
+        <div>JavaScript Fundamentals</div>
+        <div>React Development</div>
+        <div>Node.js Backend</div>
+        <div>Python for Beginners</div>
+        <div>Data Structures</div>
+    </div>
+
+    <p id="count"></p>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="q7.js"></script>
+
+</body>
+</html>
