@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Employee Status (Q2)</title>
+<style>
+  table{border-collapse:collapse;width:80%}
+  td,th{padding:8px;border:1px solid #ddd}
+  .error{color:red}
+</style>
+</head>
+<body>
+  <h2>Employees</h2>
+  <div id="error" class="error"></div>
+  <table id="tbl"><thead><tr><th>ID</th><th>Name</th><th>Status</th></tr></thead><tbody></tbody></table>
+
+<script>
+const base = 'http://localhost:3002/employees';
+function fetchAll(){
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', base);
+  xhr.onload = ()=> {
+    if(xhr.status >= 200 && xhr.status < 300){
+      const data = JSON.parse(xhr.responseText);
+      render(data);
+    } else {
+      document.getElementById('error').textContent = 'Failed to load employees';
+    }
+  };
+  xhr.onerror = ()=> document.getElementById('error').textContent = 'Network error';
+  xhr.send();
+}
+
+function render(list){
+  const tbody = document.querySelector('#tbl tbody');
+  tbody.innerHTML = '';
+  list.forEach(emp=>{
+    const tr = document.createElement('tr');
+    const statusText = emp.status;
+    tr.innerHTML = `<td>${emp.id}</td><td>${emp.name}</td>
+      <td><label><input type="checkbox" ${statusText==='active'?'checked':''}> ${statusText}</label></td>`;
+    const checkbox = tr.querySelector('input');
+    checkbox.addEventListener('change', ()=> toggle(emp, checkbox, tr));
+    tbody.appendChild(tr);
+  });
+}
+
+function toggle(emp, checkbox, tr){
+  const prev = emp.status;
+  // Optimistic UI
+  emp.status = checkbox.checked ? 'active' : 'inactive';
+  tr.querySelector('td:nth-child(3)').childNodes[0].textContent = emp.status + ' ';
+  const xhr = new XMLHttpRequest();
+  xhr.open('PATCH', `${base}/${emp.id}`);
+  xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+  xhr.onload = ()=>{
+    if(!(xhr.status>=200 && xhr.status<300)){
+      // revert
+      emp.status = prev;
+      checkbox.checked = prev==='active';
+      tr.querySelector('td:nth-child(3)').childNodes[0].textContent = prev + ' ';
+      showError('Failed to update status. Reverted.');
+    }
+  };
+  xhr.onerror = ()=> {
+    emp.status = prev;
+    checkbox.checked = prev==='active';
+    tr.querySelector('td:nth-child(3)').childNodes[0].textContent = prev + ' ';
+    showError('Network error. Reverted.');
+  };
+  xhr.send(JSON.stringify({ status: emp.status }));
+}
+
+function showError(msg){
+  const el = document.getElementById('error');
+  el.textContent = msg;
+  setTimeout(()=> el.textContent = '', 3000);
+}
+
+fetchAll();
+</script>
+</body>
+</html>

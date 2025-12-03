@@ -1,0 +1,9 @@
+{
+  "timetable": [
+    { "id": 1, "day":"Monday", "subject":"DAA", "faculty":"Ashish Sharma", "time":"09:00 - 10:00" },
+    { "id": 2, "day":"Thursday", "subject":"Agile", "faculty":"Varun Mishra", "time":"10:30 - 11:30" },
+    { "id": 3, "day":"Tuesday", "subject":"Full Stack", "faculty":"Sahil Kumar", "time":"09:00 - 10:00" },
+    { "id": 4, "day":"Wednesday", "subject":"Machine learning", "faculty":"APS Bhadauriya", "time":"11:00 - 12:00" },
+    { "id": 5, "day":"Friday", "subject":"Quant", "faculty":"Jay Prakash Garg", "time":"13:00 - 14:00" }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Ravi",
+      "email": "ravi@example.com"
+    },
+    {
+      "id": "2",
+      "name": "Pooja",
+      "email": "pooja@example.com"
+    },
+    {
+      "id": "3",
+      "name": "Karan",
+      "email": "karan@example.com"
+    },
+    {
+      "id": "4",
+      "name": "Maya",
+      "email": "maya@example.com"
+    },
+    {
+      "id": "5",
+      "name": "Simran",
+      "email": "simran@example.com"
+    },
+    {
+      "id": "adf5",
+      "name": "sonia",
+      "email": "sonia@example.com"
+    },
+    {
+      "id": "6b72",
+      "name": "Palak Nayak",
+      "email": "palaknayak@example.com"
+    }
+  ]
+}

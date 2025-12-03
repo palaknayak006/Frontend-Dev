@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Timetable Viewer (Q5)</title>
+</head>
+<body>
+  <h2>Timetable</h2>
+  <select id="day">
+    <option>Monday</option><option>Tuesday</option><option>Wednesday</option>
+    <option>Thursday</option><option>Friday</option><option>Saturday</option>
+  </select>
+  <div id="output"></div>
+
+<script>
+const base = 'http://localhost:3005/timetable';
+function load(day){
+  document.getElementById('output').textContent = 'Loading...';
+  fetch(base + '?day=' + encodeURIComponent(day))
+    .then(r => {
+      if(!r.ok) throw new Error('Failed');
+      return r.json();
+    })
+    .then(list => {
+      const out = document.getElementById('output');
+      out.innerHTML = '';
+      if(!list || list.length === 0){ out.textContent = 'No classes today.'; return; }
+      list.forEach(c=>{
+        const div = document.createElement('div');
+        div.innerHTML = `<strong>${c.subject}</strong> — ${c.faculty} <em>(${c.time})</em>`;
+        out.appendChild(div);
+      });
+    })
+    .catch(()=> document.getElementById('output').textContent = 'Error loading timetable');
+}
+
+document.getElementById('day').addEventListener('change', function(){ load(this.value); });
+load(document.getElementById('day').value);
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Mouse",
+      "price": 399,
+      "image": "https://dummyimage.com/80x80/007bff/ffffff&text=Mouse"
+    },
+    {
+      "id": 2,
+      "name": "Mechanical Keyboard",
+      "price": 2499,
+      "image": "https://dummyimage.com/80x80/28a745/ffffff&text=Keyboard"
+    },
+    {
+      "id": 3,
+      "name": "USB-C Charger",
+      "price": 999,
+      "image": "https://dummyimage.com/80x80/f39c12/ffffff&text=Charger"
+    },
+    {
+      "id": 4,
+      "name": "HD Webcam",
+      "price": 1999,
+      "image": "https://dummyimage.com/80x80/6f42c1/ffffff&text=Webcam"
+    },
+    {
+      "id": 5,
+      "name": "Bluetooth Speaker",
+      "price": 1499,
+      "image": "https://dummyimage.com/80x80/dc3545/ffffff&text=Speaker"
+    }
+  ]
+}

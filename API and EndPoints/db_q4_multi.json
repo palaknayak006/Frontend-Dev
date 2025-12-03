@@ -1,0 +1,19 @@
+{
+  "users": [
+    { "id": 1, "name": "A" }, { "id": 2, "name": "B" },
+    { "id": 3, "name": "C" }, { "id": 4, "name": "D" },
+    { "id": 5, "name": "E" }
+  ],
+  "orders": [
+    { "id": 1, "userId": 1, "total": 1200 },
+    { "id": 2, "userId": 2, "total": 800 },
+    { "id": 3, "userId": 3, "total": 2300 },
+    { "id": 4, "userId": 1, "total": 450 },
+    { "id": 5, "userId": 4, "total": 700 }
+  ],
+  "products": [
+    { "id": 1, "name": "Prod A" }, { "id": 2, "name": "Prod B" },
+    { "id": 3, "name": "Prod C" }, { "id": 4, "name": "Prod D" },
+    { "id": 5, "name": "Prod E" }
+  ]
+}
